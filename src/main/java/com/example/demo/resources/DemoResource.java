@@ -18,8 +18,8 @@ public class DemoResource {
     try {
       long time = 5000L;
       Thread.sleep(time);
-    } catch (Exception e) {
-      throw new IllegalStateException(e);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
     }
   }
 }
